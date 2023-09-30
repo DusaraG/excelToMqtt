@@ -31,7 +31,7 @@ try:
                 topic = f"Group1/{row['Location'].replace(' ', '_')}" 
                 client.publish(topic, json_data)
                 print(f"Data from '{excel_file}' has been published to MQTT topic '{topic}'.")
-                time.sleep(5)
+            time.sleep(5)
 
             # Convert the dictionary to a JSON object
             
